@@ -7,7 +7,7 @@
 # --- CONFIGURAÇÕES MANUAIS ---
 $DnsPrimario = "8.8.8.8"  # Insira o IP desejado aqui
 $DnsSecundario = "8.8.4.4" # Insira o IP desejado aqui
-$CaminhoCSV = "C:\temp\usuarios.csv" # Caminho do arquivo com os usuários
+$CaminhoCSV = "C:\users.csv" # Caminho do arquivo com os usuários
 $WorkgroupName = "SESISENAIPA"
 
 # --- FUNÇÕES AUXILIARES ---
@@ -59,8 +59,8 @@ if ($tipo.ToUpper() -eq "S") {
     }
 } else {
     # FUNÇÃO 2 e 3: Criar Suporte e Aluno
-    Criar-UsuarioLocal "suporte" "SenhaSuporte@123" "Administradores"
-    Criar-UsuarioLocal "aluno" "SenhaAluno@123" "Usuários"
+    Criar-UsuarioLocal "suporte" "usrSupP@19" "Administradores"
+    Criar-UsuarioLocal "aluno" "laboratorio" "Usuários"
 }
 
 # FUNÇÃO 4: Domínio -> Grupo de Trabalho
